@@ -94,7 +94,7 @@ static BOOL IsRunDll32()
     return ::_wcsicmp(wszBaseName, L"rundll32.exe") == 0;
 }
 
-unsigned WINAPI MainThread(LPVOID)
+static unsigned WINAPI MainThread(LPVOID)
 {
     __try
     {
